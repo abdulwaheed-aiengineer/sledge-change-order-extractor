@@ -1,0 +1,26 @@
+CHANGE ORDER
+PROJECT: Harbor Point Warehouse
+ADDRESS: 12 Pier Street, Seattle, WA 98101
+CHANGE ORDER NUMBER: CO-003
+DATE OF ISSUANCE: 2024-02-30
+ORIGINAL CONTRACT NUMBER: HPW-2023-99
+
+OWNER: Pacific Harbor Logistics LLC
+CONTRACTOR: Soundview Construction Group
+
+TITLE: Loading dock bumper modifications
+DESCRIPTION: Replace standard dock bumpers with heavy-duty laminated rubber bumpers. Reference is made to Change Order No. 004 in item notes.
+REQUESTED BY: Warehouse Operations Manager
+REASON FOR CHANGE: Accommodate higher gross weight container trucks.
+
+FINANCIAL IMPACT:
+Previous Contract Sum: $500,000.00
+Cost Impact: Net addition of $25,000.00
+In Section 4 notes: "The total cost adjustment shall be $28,000.00 including restocking fees."
+Revised Contract Value: $540,000.00
+
+SCHEDULE IMPACT:
+Schedule delay of 12 days.
+
+APPROVAL STATUS:
+Pending Owner signature.

@@ -1,0 +1,27 @@
+CONSTRUCTION CONTRACT CHANGE ORDER
+CHANGE ORDER #: CO-012
+DATE: October 12, 2024
+
+PROJECT: Westside High School Renovation
+ADDRESS: 500 Schoolhouse Road, Austin, TX 78701
+ORIGINAL CONTRACT NO.: WHS-2024-01
+
+OWNER: Austin Unified School District
+CONTRACTOR: Lonestar General Contractors
+TITLE: Deletion of terrazzo flooring in auxiliary gym
+DESCRIPTION: Deduct specified epoxy terrazzo flooring in Auxiliary Gymnasium Room 114 and replace with heavy-duty sealed polished concrete finish per Value Engineering Proposal VE-04. Work includes credit for material, preparation, and labor.
+REQUESTED BY: Austin Unified School District Facilities Board
+REASON FOR CHANGE: Value engineering credit and project budget optimization.
+
+FINANCIAL SUMMARY:
+Original Contract Sum: $4,800,000.00
+Previous Approved Change Orders: $20,000.00
+Contract Sum Prior to this Change Order: $4,820,000.00
+Cost Impact: Deduction of ($32,500.00)
+Revised Contract Value: $4,787,500.00
+
+SCHEDULE IMPACT:
+The Contract Time will be unchanged: 0 days impact.
+
+APPROVAL:
+Status: Approved by Board of Trustees on 10/14/2024

@@ -1,0 +1,99 @@
+{
+  "document_status": "success",
+  "source_type": "digital_pdf",
+  "extraction_warnings": [],
+  "project_name": {
+    "value": "Oakridge Medical Pavilion",
+    "confidence": 0.95,
+    "evidence": "PROJECT: Oakridge Medical Pavilion",
+    "page": 1
+  },
+  "project_address": {
+    "value": "1044 Highland Parkway, Denver, CO 80202",
+    "confidence": 0.95,
+    "evidence": "1044 Highland Parkway, Denver, CO 80202",
+    "page": 1
+  },
+  "change_order_number": {
+    "value": "CO-007",
+    "confidence": 1.0,
+    "evidence": "CHANGE ORDER NUMBER: CO-007",
+    "page": 1
+  },
+  "original_contract_number": {
+    "value": "CNT-2023-8891",
+    "confidence": 1.0,
+    "evidence": "ORIGINAL CONTRACT NUMBER: CNT-2023-8891",
+    "page": 1
+  },
+  "title": {
+    "value": "Electrical conduit rerouting due to unforeseen structural grade beam",
+    "confidence": 0.95,
+    "evidence": "Title: Electrical conduit rerouting due to unforeseen structural grade beam",
+    "page": 1
+  },
+  "description": {
+    "value": "Reroute electrical power feeds and branch circuits around newly exposed subsurface grade beam discovered during basement slab excavation, per RFI-084 response and Engineer Sketch SK-012. Includes core drilling, additional 3-inch rigid conduit, junction boxes, and pulling conductors.",
+    "confidence": 0.95,
+    "evidence": "Description: Reroute electrical power feeds and branch circuits around newly exposed subsurface grade beam discovered during basement slab excavation, per RFI-084 response and Engineer Sketch SK-012. Includes core drilling, additional 3-inch rigid conduit, junction boxes, and pulling conductors.",
+    "page": 1
+  },
+  "contractor_name": {
+    "value": "Apex Commercial Builders LLC",
+    "confidence": 0.95,
+    "evidence": "CONTRACTOR: Apex Commercial Builders LLC",
+    "page": 1
+  },
+  "owner_name": {
+    "value": "Colorado Health Properties Inc.",
+    "confidence": 0.95,
+    "evidence": "OWNER: Colorado Health Properties Inc.",
+    "page": 1
+  },
+  "issue_date": {
+    "value": "2024-05-15",
+    "confidence": 1.0,
+    "evidence": "DATE OF ISSUANCE: 2024-05-15",
+    "page": 1
+  },
+  "requested_by": {
+    "value": "Structural Engineer (Thornton Tomasetti)",
+    "confidence": 0.95,
+    "evidence": "Requested by: Structural Engineer (Thornton Tomasetti)",
+    "page": 1
+  },
+  "reason_for_change": {
+    "value": "Unforeseen existing structural conditions not shown on civil record drawings.",
+    "confidence": 0.95,
+    "evidence": "Reason for change: Unforeseen existing structural conditions not shown on civil record drawings.",
+    "page": 1
+  },
+  "cost_impact": {
+    "value": {
+      "amount": 14500.0,
+      "currency": "USD",
+      "impact_type": "addition"
+    },
+    "confidence": 1.0,
+    "evidence": "The Contract Sum will be increased by this Change Order in the amount of: $14,500.00",
+    "page": 1
+  },
+  "schedule_impact_days": {
+    "value": 7,
+    "confidence": 1.0,
+    "evidence": "The Contract Time will be increased by: 7 calendar days",
+    "page": 1
+  },
+  "revised_contract_value": {
+    "value": 1309500.0,
+    "confidence": 1.0,
+    "evidence": "The new Contract Sum including this Change Order will be: $1,309,500.00",
+    "page": 1
+  },
+  "approval_status": {
+    "value": "approved",
+    "confidence": 1.0,
+    "evidence": "STATUS: Fully Executed and Approved",
+    "page": 1
+  }
+}

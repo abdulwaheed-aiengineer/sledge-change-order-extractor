@@ -1,0 +1,34 @@
+AIA Document G701 - Change Order
+PROJECT: Oakridge Medical Pavilion
+1044 Highland Parkway, Denver, CO 80202
+
+CHANGE ORDER NUMBER: CO-007
+DATE OF ISSUANCE: 2024-05-15
+CONTRACT DATED: March 10, 2023
+CONTRACT FOR: General Construction
+ORIGINAL CONTRACT NUMBER: CNT-2023-8891
+
+OWNER: Colorado Health Properties Inc.
+CONTRACTOR: Apex Commercial Builders LLC
+ARCHITECT: Gensler Denver Associates
+
+THE CONTRACT IS CHANGED AS FOLLOWS:
+Title: Electrical conduit rerouting due to unforeseen structural grade beam
+Description: Reroute electrical power feeds and branch circuits around newly exposed subsurface grade beam discovered during basement slab excavation, per RFI-084 response and Engineer Sketch SK-012. Includes core drilling, additional 3-inch rigid conduit, junction boxes, and pulling conductors.
+Requested by: Structural Engineer (Thornton Tomasetti)
+Reason for change: Unforeseen existing structural conditions not shown on civil record drawings.
+
+THE ORIGINAL CONTRACT SUM WAS: $1,250,000.00
+Net change by previously authorized Change Orders: $45,000.00
+The Contract Sum prior to this Change Order was: $1,295,000.00
+The Contract Sum will be increased by this Change Order in the amount of: $14,500.00
+The new Contract Sum including this Change Order will be: $1,309,500.00
+
+The Contract Time will be increased by: 7 calendar days
+The date of Substantial Completion will be adjusted accordingly.
+
+NOT VALID UNTIL SIGNED BY ARCHITECT, CONTRACTOR AND OWNER.
+Architect: Gensler Denver Associates - Signed: J. Miller (Date: 2024-05-16)
+Contractor: Apex Commercial Builders LLC - Signed: R. Davis (Date: 2024-05-17)
+Owner: Colorado Health Properties Inc. - Signed: E. Vance (Date: 2024-05-18)
+STATUS: Fully Executed and Approved
