@@ -17,6 +17,16 @@ from app.prompts.extraction_prompt import EXTRACTION_SYSTEM_PROMPT, format_user_
 
 logger = logging.getLogger("sledge.extractor.llm")
 
+# Pricing per 1,000,000 tokens in USD (Standard OpenAI rates)
+MODEL_PRICING_PER_1M: dict[str, dict[str, float]] = {
+    "gpt-4o-mini": {"prompt": 0.150, "completion": 0.600},
+    "gpt-4o": {"prompt": 2.500, "completion": 10.000},
+    "gpt-4o-2024-08-06": {"prompt": 2.500, "completion": 10.000},
+    "gpt-4-turbo": {"prompt": 10.000, "completion": 30.000},
+    "gpt-3.5-turbo": {"prompt": 0.500, "completion": 1.500},
+}
+
+
 
 class LLMExtractionError(Exception):
     """Base exception for LLM extraction failures."""
@@ -53,6 +63,31 @@ class LLMExtractor:
             self.client = OpenAI(api_key=api_key, timeout=timeout_seconds)
         else:
             self.client = None
+
+    def _log_token_usage_and_cost(self, usage: Any) -> None:
+        """Logs token usage breakdown and calculates estimated cost in USD."""
+        if not usage:
+            return
+
+        prompt_tokens = getattr(usage, "prompt_tokens", None)
+        completion_tokens = getattr(usage, "completion_tokens", None)
+        total_tokens = getattr(usage, "total_tokens", None)
+
+        if not isinstance(prompt_tokens, (int, float)) or not isinstance(completion_tokens, (int, float)):
+            return
+
+        total = int(total_tokens) if isinstance(total_tokens, (int, float)) else int(prompt_tokens + completion_tokens)
+        rates = MODEL_PRICING_PER_1M.get(self.model, MODEL_PRICING_PER_1M["gpt-4o-mini"])
+        cost = (prompt_tokens * rates["prompt"] + completion_tokens * rates["completion"]) / 1_000_000.0
+
+        logger.info(
+            "LLM Usage & Cost [%s]: %d prompt + %d completion = %d total tokens | Est. Cost: $%.6f USD",
+            self.model,
+            int(prompt_tokens),
+            int(completion_tokens),
+            total,
+            cost,
+        )
 
     def extract(self, document_text: str) -> RawChangeOrderExtraction:
         """Invokes OpenAI with structured outputs to extract change-order data.
@@ -93,6 +128,9 @@ class LLMExtractor:
                 response_format=RawChangeOrderExtraction,
                 timeout=self.timeout_seconds,
             )
+
+            # Log token usage and cost per request
+            self._log_token_usage_and_cost(getattr(response, "usage", None))
 
             choice = response.choices[0]
             if choice.finish_reason == "length":

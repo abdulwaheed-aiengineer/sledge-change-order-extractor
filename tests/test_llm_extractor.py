@@ -102,3 +102,35 @@ def test_null_parsed_response_handling() -> None:
         extractor.extract("Doc text")
 
     assert "did not return structured data" in str(exc_info.value)
+
+
+def test_token_usage_and_cost_logging(caplog: pytest.LogCaptureFixture) -> None:
+    """Verifies that token usage and cost calculation are logged accurately."""
+    mock_client = MagicMock()
+    mock_parsed_data = RawChangeOrderExtraction(
+        project_name=RawFieldCandidate(value="Airport Terminal"),
+    )
+
+    mock_choice = MagicMock()
+    mock_choice.finish_reason = "stop"
+    mock_choice.message.parsed = mock_parsed_data
+
+    mock_usage = MagicMock()
+    mock_usage.prompt_tokens = 1000
+    mock_usage.completion_tokens = 500
+    mock_usage.total_tokens = 1500
+
+    mock_response = MagicMock()
+    mock_response.choices = [mock_choice]
+    mock_response.usage = mock_usage
+
+    mock_client.beta.chat.completions.parse.return_value = mock_response
+
+    extractor = LLMExtractor(client=mock_client, model="gpt-4o-mini")
+    with caplog.at_level("INFO", logger="sledge.extractor.llm"):
+        extractor.extract("Airport Terminal expansion")
+
+    # gpt-4o-mini: 1000 * 0.150/1M + 500 * 0.600/1M = 0.00015 + 0.00030 = 0.000450
+    assert any("LLM Usage & Cost [gpt-4o-mini]" in record.message for record in caplog.records)
+    assert any("$0.000450 USD" in record.message for record in caplog.records)
+
