@@ -65,8 +65,8 @@ Every field is wrapped in:
 
 1. **Clone repository and enter directory:**
    ```bash
-   git clone <repo-url>
-   cd sledge
+   git clone https://github.com/abdulwaheed-aiengineer/sledge-change-order-extractor.git
+   cd sledge-change-order-extractor
    ```
 
 2. **Create and activate a virtual environment:**
